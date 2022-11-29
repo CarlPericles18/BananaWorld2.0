@@ -1,0 +1,39 @@
+:root {
+    --font-family:'Kumbh Sans',sans-serif;
+    --font-familyTwo:'Overpass',sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: var(--font-family);
+}
+/* NAVIGATION */
+.logoTwo{
+    display: none;
+    cursor: pointer;
+
+}
+
+
+.logoImg{
+    width: auto;
+    height: 110px;
+    text-align: center;
+    margin-left:40px;
+    cursor: pointer;
+}
+
+h1 {
+text-align: center;
+}
+h3 {
+    text-align: center;
+    }
+p{
+    text-align: center;
+}

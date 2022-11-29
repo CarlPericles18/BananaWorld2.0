@@ -1,0 +1,56 @@
+:root {
+    --font-family:'Kumbh Sans',sans-serif;
+    --font-familyTwo:'Overpass',sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: var(--font-family);
+}
+/* NAVIGATION */
+.logoTwo{
+    display: none;
+    cursor: pointer;
+
+}
+
+
+.logoImg{
+    width: auto;
+    height: 110px;
+    text-align: center;
+    margin-left:40px;
+    cursor: pointer;
+}
+
+
+h2{
+    font-size: 40px;
+    color: rgba(2,188,125,255);
+
+}
+h4{
+    font-size: 16px;
+    font-weight: 100;
+}
+p{
+    font-size: 12px;
+    color: rgba(2,188,125,255);
+
+}
+.successfulPayment{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.successfulPayment img{
+    width: 10%;
+    height: 20%;
+}
+
+

@@ -1,0 +1,421 @@
+:root {
+    --font-family:'Kumbh Sans',sans-serif;
+    --font-familyTwo:'Overpass',sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.logoImg{
+    width: auto;
+    height: 120px;
+    text-align: center;
+    margin-left: 40px;
+}
+
+body{
+    background-color: white;
+    margin: 0;
+    background-image: url("/Pictures/BananaImgOne.jpg") ;
+    background-repeat: no-repeat;
+    background-size: 40% ;
+    background-position: -12px ;
+}
+/* .head{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+} */
+
+
+/* .fixedNav{
+    width: 100%;
+    height: 160px;
+    margin: -165px auto;
+
+} */
+
+.donateImg{
+    width: 80%;
+    height: 100%;
+    z-index: -100;
+    overflow: hidden;
+    background-size: cover;
+}
+
+/* NAVIGATION */
+.btn{
+    display: none;
+}
+nav{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+    font-family: var(--font-family);
+    font-size: 20px;
+    background-color:transparent;
+
+}
+.ulList{
+    position: absolute;
+    width: auto;
+    height: auto;
+    right: 0;
+    bottom: 0;
+}
+.ulList a{
+    transition:  0.7s ease;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+    
+nav ul li{
+    margin:  0 30px;
+}
+
+nav ul li a{
+    color:orange;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    background-color: black;
+    position: absolute;
+    left: 0;
+    bottom: -18px;
+    height: 2px;
+    width: 100%;
+    transition: transform 0.2s ease;
+    opacity: 0;
+
+}
+
+nav ul li a:hover::after{
+    transform: translateY(-15px);
+    opacity: 1;
+
+}
+.logoTwo{
+    display:none;
+ }
+.logoImg{
+    width: auto;
+    height: 110px;
+    text-align: center;
+    margin-left:40px;
+}
+
+.contactCover{
+    text-align: center;
+    font-family: var(--font-family);
+    margin: 20px 0 0 0;
+}
+.contactCover h1{
+    color: orange;
+    font-size: 80px;
+
+}
+.contactInformation{
+    font-family: var(--font-family);
+    text-align:center;
+}
+
+.message{
+    font-size: 20px;
+}
+
+textarea{
+    resize: none;
+}
+
+
+.contactInformation h3{
+    margin: 30px 0 10px 0;
+}
+.contactBox{
+    width: 400px;
+    height: 30px;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+.bttn{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.sub{
+    cursor: pointer;
+    border: 1px solid orange;
+    background-color: orange;
+    border-radius: 10px;
+    padding: 20px 30px;
+    font-family:var(--font-familyTwo);
+    font-size: 20px;
+    
+}
+/* THANK YOU MESSAGE */
+.thankYou{
+    width: 100%;
+    height: 100vh;
+    background:rgba(0,0,0,0.9) ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.thnx{
+background-color:white;
+border-radius: 10px;
+border: 1px solid white;
+margin: 0 auto 0 auto;
+height: auto;
+text-align: center;
+}
+.thnx h1{
+    font-family: var(--font-familyTwo);
+    font-size: 40px;
+    text-align: center;
+    color: rgba(2,188,125,255);
+}
+.checkMark{
+    width: 15%;
+    height: auto;
+}
+
+.thnx p{
+    font-family: var(--font-familyTwo);
+}
+.closeBtn{
+    cursor: pointer;
+    font-family: var(--font-familyTwo);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    width: 30%;
+    height: auto;
+    margin: 0 auto 20px auto;
+}
+.closeBtn:hover{
+    transform: scale(1.1) ;
+    -webkit-transform: scale(1.1) ;
+    -moz-transform: scale(1.1) ;
+    transition: .5s ease-in-out;
+}
+
+
+/* invalid */
+.invalid1{
+    display: none;
+    margin-top: 10px;
+    color: red;
+}
+.invalid2{
+    display: none;
+    margin-top: 10px;
+    color: red;
+}
+.invalidMain{
+    margin-top: 10px;
+    color: red;
+    display: none;
+
+}
+.invalidMainTwo{
+    margin-top: 10px;
+    color: red;
+    display: none;
+
+}
+
+
+
+
+
+/* CONTACT */
+.contactInfo{
+    color: white;
+    font-family: var(--font-familyTwo);
+    background-color: black;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    bottom: 0;
+    margin-top: 100px;
+}
+.contactInfoTwo{
+    width: 100;
+    justify-content: left;
+    display: flex;
+    padding-top: 20px;
+    position: relative;
+    gap:100px;
+}
+
+.terms{
+display: flex;
+gap: 50px;
+margin: 50px 0 0 0;
+}
+.terms a{
+text-decoration: none;
+color:white;
+
+}
+.logoImgTwo{
+width: auto;
+height: 120px;
+}
+.contactSocial{
+display: flex;
+font-size: 12px;
+gap: 1050px;
+width: 100%;
+position: relative;
+}
+.iconImg{
+height: 28px;
+cursor: pointer;
+}
+
+.social{
+position: absolute;
+display: flex;
+gap: 20px;
+right: 20px;        
+
+}
+.mobileMenu{
+    display: none;
+    cursor: pointer;
+} 
+ 
+/* MEDIA QUERY */
+
+@media (max-width: 841px){
+    .logoTwo{
+    display: block;
+    width: auto;
+    height: 80px;
+    text-align: center;
+    margin:10px 600px 10px 30px;
+    }
+    .head{
+        width: auto;
+    }
+    .logoImg{
+        display: none;
+    } 
+    .contactBox{
+        width: 60%;
+    }
+  
+   
+    .mobileMenu{
+        display: block;
+        position: absolute;
+        right: 0;
+        margin: 20px 10px 0 0 ;
+    }
+    .bar{
+        background-color: black;
+        display: block;
+        width: 35px;
+        height:5px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+     }
+
+    .mobileMenu.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .mobileMenu.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .mobileMenu.active .bar:nth-child(3){
+        transform: translateY(-12px) rotate(-45deg);
+    }
+
+    .headerImg{
+        background-color: orange;
+        width: 100%;
+    }
+    .ulList{
+        /* top: 70px; */
+        top: -700px;
+        gap:100px;
+        padding: 30px 0 0 0;
+        flex-direction: column;
+        background-color: orange;
+        width: 100%;
+        height: 500px;
+        text-align: center;
+        transition: 0.7s;
+        
+
+    }
+
+    .ulList a{
+        color: white;
+        margin: 16px 0;
+    }
+    .ulList.active{
+        /* left:0; */
+        top: 70%;
+       
+    }
+   
+    .btn{
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        border: 0;
+        background-color:  transparent;
+        right: 0;
+        color: orange;
+        font-size:50px;
+    }
+    .contactCover h1{
+        font-size: 50px;
+        margin-top: 100px;
+    }
+    .terms{
+        font-size: 8px;
+        position: absolute;
+        display: flex;
+        width: auto;
+        height: 50px;
+        gap: 10px;
+        margin: 50px auto 0 160px;
+    }
+    .copyright h3{
+        font-size: 8px;
+        width: 100%;
+        height: auto;
+        padding-right: 160px;
+    }
+    .social{
+        font-size: 8px;
+    }
+    .contactSocial{
+        margin-bottom: 10px;
+    }
+
+
+
+
+}

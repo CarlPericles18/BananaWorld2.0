@@ -1,0 +1,647 @@
+:root {
+    --font-family:'Kumbh Sans',sans-serif;
+    --font-familyTwo:'Overpass',sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+/* .head{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+} */
+
+
+/* .fixedNav{
+    width: 100%;
+    height: 160px;
+    margin: -165px auto;
+
+} */
+
+/* NAVIGATION */
+
+.logoTwo{
+    display: none;
+}
+
+nav{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+    font-family: var(--font-family);
+    font-size: 20px;
+    background-color:transparent;
+
+}
+.ulList{
+    position: absolute;
+    width: auto;
+    height: auto;
+    right: 0;
+    bottom: 0;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+    
+nav ul li{
+    margin:  0 30px;
+}
+
+nav ul li a{
+    color:orange;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    background-color: black;
+    position: absolute;
+    left: 0;
+    bottom: -18px;
+    height: 2px;
+    width: 100%;
+    transition: transform 0.2s ease;
+    opacity: 0;
+
+}
+
+nav ul li a:hover::after{
+    transform: translateY(-15px);
+    opacity: 1;
+
+}
+.logoImg{
+    width: auto;
+    height: 110px;
+    text-align: center;
+    margin-left:40px;
+}
+
+
+/* BackGround IMg */
+
+
+
+.donateText{
+    margin: 100px 0 100px 0;
+    text-align: center;
+    width: 100%;
+    font-family: var(--font-family);
+}
+
+.donateText h2{
+}
+.donateText h3{
+    font-size: 10px;
+}
+
+/* PAYMENT */
+
+
+.mainP{
+    display: flex;
+    justify-content: center;
+    margin-bottom:40px ;
+}
+.payment{
+    padding: 20px 0 0 0;
+    width: 50%;
+    height: auto;
+    top: 600px;
+    background-color: white;
+    font-family: var(--font-familyTwo);
+    text-align: center;
+    box-shadow:-1px 1px 53px -10px rgba(0,0,0,0.75);
+    /* -webkit-box-shadow: -1px 1px 53px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 53px -10px rgba(0,0,0,0.75); */
+}
+
+.payment h1{
+    font-size: 22px;
+}
+.payment h2{
+    font-size: 15px;
+}
+.payment h3{
+    font-size: 10px;
+}
+.paypalLogo{
+    width: 90px;
+    height: auto;
+}
+
+.pay{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin: 20px 0 0 0 ;
+}
+.pay div{
+    cursor: pointer;
+    color: black;
+    background-color: orange;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.pay div:hover{
+    color: orange;
+    background-color: rgb(0, 0, 0);
+    transition: 0.2s ease-in-out;
+}
+
+.money{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin: 20px 0 0 0 ;
+    
+}
+.money div{
+    padding: 0;
+    cursor: pointer;
+    color: black;
+    background-color: orange;
+    padding: 20px 30px ;
+    font-size: 20px;
+    border: 1px solid orange;
+    border-radius: 10px;
+    font-weight: bold;
+
+}
+.money div:hover{
+    color: orange;
+    background-color: rgb(0, 0, 0);
+    transition: 0.2s ease-in-out;
+}
+.inputNum{
+    margin: 20px 0 0 0;
+    padding: 10px 10px;
+    font-size: 15px;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.inputNum::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+h6{
+    margin: 0;
+  }
+
+.paymentOption{
+    display: flex;
+    margin: 20px 0 0 0;
+    justify-content: center;
+    gap: 20px;
+
+}
+.paymentOption div{
+    cursor: pointer;
+    color: black;
+    font-size: 15px;
+    background-color: orange;
+    border-radius: 10px;
+    padding: 0 20px;
+}
+.paymentOption div:hover{
+    color: orange;
+    background-color: rgb(0, 0, 0);
+    transition: 0.2s ease-in-out;
+}
+.payPalPayment{
+    padding: 0;
+}
+.paypalLogo{
+    margin: 15px 0 0 -10px;
+
+}
+.checkingAccount{
+ display: flex;
+ width:100%;
+ justify-content: center;
+ text-align: center;
+ margin: 0 0 20px 0;
+}
+.checkingAccount p:hover{
+    color: orange;
+    background-color: rgb(0, 0, 0);
+    transition: 0.2s ease-in-out;
+}
+
+.checkingAccount p{
+    background-color: orange;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+/* thank you */
+.thankYou{
+    width: 100%;
+    height: 100vh;
+    background:rgba(0,0,0,0.9) ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    display: none;
+
+}
+.thnx{
+background-color:white;
+border-radius: 10px;
+border: 1px solid white;
+margin: 0 auto 0 auto;
+height: auto;
+text-align: center;
+}
+.thnx h1{
+    font-family: var(--font-familyTwo);
+    font-size: 25px;
+    margin-top: 70px;
+    text-align: center;
+    color: rgba(2,188,125,255);
+}
+.thnx h2{
+    font-family: var(--font-family);
+    font-size: 13px;
+    margin-right: 230px;
+    margin-top: 0;
+}
+.checkMark{
+    width: 15%;
+    height: auto;
+}
+
+.thnx p{
+    font-family: var(--font-familyTwo);
+}
+
+
+.donateBtn{
+    border: 1px solid black;
+    padding: 5px;
+    width: 50%;
+    margin: 0 auto 0 auto;
+    border-radius: 10px;
+    color: white;
+    background:black ;
+    font-size: 20px;
+    font-family:var(--font-family);
+    cursor: pointer;
+
+}
+
+.donateBtn:hover{
+    transform: scale(1.1) ;
+    transition: .5s ease-in-out;
+}
+
+.closeBtn{
+    border: 1px solid black;
+    padding: 5px;
+    width: 50%;
+    margin: 5px  auto 50px auto;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    font-family:var(--font-family);
+    cursor: pointer;
+}
+
+.closeBtn:hover{
+    transform: scale(1.1) ;
+    transition: .5s ease-in-out;
+}
+
+/* ADD INFORMATION FOR PAYMENT */
+.addInformation{
+    font-family: var(--font-family);
+    margin: 10px 50px;
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+.addInformation input{
+    font-size: 13px;
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+.formDiv{
+    font-family: var(--font-family);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formDiv h3{
+    margin: 10px 200px 5px 10px;
+    font-size: 12px;
+}
+.formDiv input{
+    width: 80%;
+}
+.CreditCardLogo {
+    display: flex;
+    gap: 0;
+}
+.CreditCardLogo img{
+   width: auto;
+   height: 30px;
+   margin: 0 0 0 50px;
+}
+.formDiv input{
+    border: 1px solid gray;
+    font-size: 13px;
+    padding: 10px;
+
+}
+
+
+
+/* CONTACT */
+
+.contactInfo{
+        color: white;
+        font-family: var(--font-familyTwo);
+        background-color: black;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        bottom: 0;
+}
+.contactInfoTwo{
+        width: 100;
+        justify-content: left;
+        display: flex;
+        padding-top: 20px;
+        position: relative;
+        gap:100px;
+}
+    
+.terms{
+    display: flex;
+    gap: 50px;
+    margin: 50px 0 0 0;
+}
+.terms a{
+    text-decoration: none;
+    color:white;
+
+}
+.logoImgTwo{
+    width: auto;
+    height: 120px;
+}
+.contactSocial{
+    display: flex;
+    font-size: 12px;
+    gap: 1050px;
+    width: 100%;
+    position: relative;
+}
+.iconImg{
+    height: 28px;
+    cursor: pointer;
+}
+
+.social{
+    position: absolute;
+    display: flex;
+    gap: 20px;
+    right: 20px;        
+
+}
+
+
+
+.bgVidTwo{
+    width: 100%;
+    min-height: 100%;
+    z-index: -100;
+    overflow: hidden;
+    background-size: cover;
+    /* display: block; */
+    /* margin: 0 auto; */
+}
+.donateBtnOne{
+    text-align: center;
+}
+.donateBtnOne button{
+    font-size: 30px;
+    font-family: var(--font-familyTwo);
+    border: 1px solid orange;
+    border-radius: 10px;
+    padding: 20px 50px;
+    background-color: orange;
+    cursor: pointer;
+}
+.donateBtnOne a{
+    color: white;
+    text-decoration: none;
+}
+.donateBtnOne button:hover{
+    background-color: rgb(221, 148, 11);
+    transition: .1s ease-in-out;
+}
+
+
+
+
+/* new  */
+
+.logoImgTwo{
+    width: auto;
+    height: 120px;
+    }
+    .contactSocial{
+    display: flex;
+    font-size: 12px;
+    gap: 1050px;
+    width: 100%;
+    position: relative;
+    }
+    .iconImg{
+    height: 28px;
+    cursor: pointer;
+    }
+    
+    .social{
+    position: absolute;
+    display: flex;
+    gap: 20px;
+    right: 20px;        
+    
+    }
+    .mobileMenu{
+        display: none;
+        cursor: pointer;
+    } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 841px){
+    .logoTwo{
+    display: block;
+    width: auto;
+    height: 80px;
+    text-align: center;
+    margin:20px 600px 10px 30px;
+    }
+    .logoImg{
+        display: none;
+    } 
+    .contactBox{
+        width: 90%;
+    }
+  
+   
+    .mobileMenu{
+        display: block;
+        position: absolute;
+        right: 0;
+        margin: 20px 10px 0 0 ;
+    }
+    .bar{
+        background-color: black;
+        display: block;
+        width: 35px;
+        height:5px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+     }
+
+    .mobileMenu.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .mobileMenu.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .mobileMenu.active .bar:nth-child(3){
+        transform: translateY(-12px) rotate(-45deg);
+    }
+
+    .headerImg{
+        background-color: orange;
+    }
+    .ulList{
+        /* top: 70px; */
+        top: -500%;
+        gap: 100px;
+        padding: 30px 0 0 0;
+        flex-direction: column;
+        background-color: orange;
+        width: 100%;
+        height: 500px;
+        text-align: center;
+        transition: 0.7s;
+        z-index:100;
+    }
+
+    .ulList a{
+        color: white;
+        margin: 16px 0;
+    }
+    .ulList.active{
+        /* left:0; */
+        top: 80px;
+    }
+   
+    .btn{
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        border: 0;
+        background-color:  transparent;
+        right: 0;
+        color: orange;
+        font-size:50px;
+    }
+    .contactCover h1{
+        font-size: 50px;
+    }
+    .terms{
+        font-size: 8px;
+        position: absolute;
+        display: flex;
+        width: auto;
+        height: 50px;
+        gap: 10px;
+        margin: 50px auto 0 160px;
+    }
+    .copyright h3{
+        font-size: 8px;
+        width: 100%;
+        height: auto;
+        padding-right: 160px;
+    }
+    .social{
+        font-size: 8px;
+    }
+    .contactSocial{
+        margin-bottom: 10px;
+    }
+
+
+    .storyTitle h1{
+        font-size: 40px;
+        color: black;
+    }
+
+    .donateText h2{
+        font-size: 12px;
+    }
+    .payment{
+        width: 100%;
+    }
+    .payment h1{
+        font-size: 30px;
+    }
+    .payment h2{
+        font-size: 13px;
+    }
+
+}

@@ -1,0 +1,417 @@
+
+:root {
+    --font-family:'Kumbh Sans',sans-serif;
+    --font-familyTwo:'Overpass',sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.logoImg{
+    width: auto;
+    height: 120px;
+    text-align: center;
+    margin-left: 40px;
+}
+
+body{
+    background-color: white;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: 30% ;
+    background-position-y:130px;
+    background-image: url(/Pictures/storySeven.jpg);
+}
+
+
+
+/* .head{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+} */
+
+
+/* .fixedNav{
+    width: 100%;
+    height: 160px;
+    margin: -165px auto;
+
+} */
+
+
+
+.donateImg{
+    width: 80%;
+    height: 100%;
+    z-index: -100;
+    overflow: hidden;
+    background-size: cover;
+}
+/* NAVIGATION */
+.logoTwo{
+    display: none;
+}
+
+nav{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+    font-family: var(--font-family);
+    font-size: 20px;
+    background-color:transparent;
+
+}
+.ulList{
+    position: absolute;
+    width: auto;
+    height: auto;
+    right: 0;
+    bottom: 0;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+    
+nav ul li{
+    margin:  0 30px;
+}
+
+nav ul li a{
+    color:orange;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    background-color: black;
+    position: absolute;
+    left: 0;
+    bottom: -18px;
+    height: 2px;
+    width: 100%;
+    transition: transform 0.2s ease;
+    opacity: 0;
+
+}
+
+nav ul li a:hover::after{
+    transform: translateY(-15px);
+    opacity: 1;
+
+}
+.logoImg{
+    width: auto;
+    height: 110px;
+    text-align: center;
+    margin-left:40px;
+}
+
+
+/* STORY TITLE */
+
+.storyTitle{
+    width: 100%;
+    text-align: center;
+    font-family: var(--font-family);
+}
+.storyTitle h1{
+    font-size: 70px;
+    color: orange;
+    margin-bottom: 20px;
+}
+.storyTitle p{
+    font-weight: bold;
+    margin-top: 0;
+}
+
+
+.bodyMainStory{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.bodyStory{
+    width: 50%;
+    height: auto;
+    margin: 100px 0 0 0;
+    font-family: var(--font-familyTwo);
+    background-color: lightgrey;
+    border-radius: 30px;
+    padding: 5px 30px 20px 30px ;
+}
+.stories{
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    gap: 150px;
+    margin-top: 50px;
+   
+}
+.storiesTwo{
+    display: flex;
+}
+.stories p{
+    text-align: center;
+    margin: auto 0 240px 0;
+}
+.stories video{
+    width: 50%;
+    height: 50%;
+    border-radius: 5%;
+}
+.stories img{
+    width: 50%;
+    height:auto;
+    border-radius: 5%;
+
+}
+
+
+/* CONTACT */
+
+.contactInfo{
+    color: white;
+    font-family: var(--font-familyTwo);
+    background-color: black;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    bottom: 0;
+}
+.contactInfoTwo{
+    width: 100;
+    justify-content: left;
+    display: flex;
+    padding-top: 20px;
+    position: relative;
+    gap:100px;
+}
+
+.terms{
+display: flex;
+gap: 50px;
+margin: 50px 0 0 0;
+}
+.terms a{
+text-decoration: none;
+color:white;
+
+}
+.logoImgTwo{
+width: auto;
+height: 120px;
+}
+.contactSocial{
+display: flex;
+font-size: 12px;
+gap: 1050px;
+width: 100%;
+position: relative;
+}
+.iconImg{
+height: 28px;
+cursor: pointer;
+}
+
+.social{
+position: absolute;
+display: flex;
+gap: 20px;
+right: 20px;        
+
+}
+
+
+
+.bgVidTwo{
+width: 100%;
+min-height: 100%;
+z-index: -100;
+overflow: hidden;
+background-size: cover;
+/* display: block; */
+/* margin: 0 auto; */
+}
+.donateBtnOne{
+text-align: center;
+}
+.donateBtnOne button{
+font-size: 30px;
+font-family: var(--font-familyTwo);
+border: 1px solid orange;
+border-radius: 10px;
+padding: 20px 50px;
+background-color: orange;
+cursor: pointer;
+}
+.donateBtnOne a{
+color: white;
+text-decoration: none;
+}
+.donateBtnOne button:hover{
+background-color: rgb(221, 148, 11);
+transition: .1s ease-in-out;
+}
+
+
+/* new */
+.logoImgTwo{
+    width: auto;
+    height: 120px;
+    }
+    .contactSocial{
+    display: flex;
+    font-size: 12px;
+    gap: 1050px;
+    width: 100%;
+    position: relative;
+    }
+    .iconImg{
+    height: 28px;
+    cursor: pointer;
+    }
+    
+    .social{
+    position: absolute;
+    display: flex;
+    gap: 20px;
+    right: 20px;        
+    
+    }
+    .mobileMenu{
+        display: none;
+        cursor: pointer;
+    } 
+
+
+
+
+    @media (max-width: 841px){
+        .logoTwo{
+        display: block;
+        width: auto;
+        height: 80px;
+        text-align: center;
+        margin:10px 600px 10px 30px;
+        }
+        .logoImg{
+            display: none;
+        } 
+        .contactBox{
+            width: 90%;
+        }
+      
+       
+        .mobileMenu{
+            display: block;
+            position: absolute;
+            right: 0;
+            margin: 20px 10px 0 0 ;
+        }
+        .bar{
+            background-color: black;
+            display: block;
+            width: 35px;
+            height:5px;
+            margin: 5px auto;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+         }
+    
+        .mobileMenu.active .bar:nth-child(2){
+            opacity: 0;
+        }
+        .mobileMenu.active .bar:nth-child(1){
+            transform: translateY(8px) rotate(45deg);
+        }
+        .mobileMenu.active .bar:nth-child(3){
+            transform: translateY(-12px) rotate(-45deg);
+        }
+    
+        .headerImg{
+            background-color: orange;
+        }
+        .ulList{
+            /* top: 70px; */
+            top: -520%;
+            gap: 100px;
+            padding: 30px 0 0 0;
+            flex-direction: column;
+            background-color: orange;
+            width: 100%;
+            height: 500px;
+            text-align: center;
+            transition: 0.7s;
+            z-index:100;
+        }
+    
+        .ulList a{
+            color: white;
+            margin: 16px 0;
+        }
+        .ulList.active{
+            /* left:0; */
+            top: 80px;
+        }
+       
+        .btn{
+            display: block;
+            cursor: pointer;
+            position: absolute;
+            border: 0;
+            background-color:  transparent;
+            right: 0;
+            color: orange;
+            font-size:50px;
+        }
+        .contactCover h1{
+            font-size: 50px;
+        }
+        .terms{
+            font-size: 8px;
+            position: absolute;
+            display: flex;
+            width: auto;
+            height: 50px;
+            gap: 10px;
+            margin: 50px auto 0 160px;
+        }
+        .copyright h3{
+            font-size: 8px;
+            width: 100%;
+            height: auto;
+            padding-right: 160px;
+        }
+        .social{
+            font-size: 8px;
+        }
+        .contactSocial{
+            margin-bottom: 10px;
+        }
+
+
+        .storyTitle h1{
+            font-size: 40px;
+            color: black;
+        }
+
+
+
+
+        .bodyStory{
+            width: 100%;
+        }
+    
+    }
