@@ -47,7 +47,7 @@ donateBtn.addEventListener('click',()=>{
     emailCheck()
 
     if(error1.textContent === '' && error2.textContent ===''){
-        window.open('http://127.0.0.1:5500/payment.html')
+        window.open('/payment.html')
         thanks.style.display = 'none';
         clear()
     }
