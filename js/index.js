@@ -101,10 +101,10 @@ button.addEventListener('click',() =>{
 
 // DONATE BUTTONS
 wrapperDonateBtn.addEventListener('click', ()=>{
-    location.href = 'http://127.0.0.1:5500/Donate.html';
+    location.href = 'http://127.0.0.1:5500/donate.html';
 })
 
 
  donateBtn.addEventListener('click', ()=>{
-        location.href = 'http://127.0.0.1:5500/Donate.html';
+        location.href = 'http://127.0.0.1:5500/donate.html';
  })
